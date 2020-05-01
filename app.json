@@ -1,0 +1,17 @@
+{
+  "name": "bakesaleapp",
+  "displayName": "bakesaleapp",
+  "expo": {
+    "name": "bakesaleapp",
+    "slug": "bakesaleapp",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
