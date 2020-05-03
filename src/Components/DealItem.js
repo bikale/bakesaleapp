@@ -1,11 +1,12 @@
 /* eslint-disable*/
 
 import React from "react";
-import { View, Text, StyleSheet, Image } from "react-native";
+import { View, Text, StyleSheet, Image, TouchableOpacity } from "react-native";
 import PropTypes from "prop-types";
 const DealItem = ({ deal }) => {
+  const dealDetail = () => {};
   return (
-    <View style={styles.container}>
+    <TouchableOpacity style={styles.container} onPress={dealDetail}>
       <Image source={{ uri: deal.media[0] }} style={styles.image} />
 
       <View style={styles.info}>
@@ -15,10 +16,10 @@ const DealItem = ({ deal }) => {
           <Text style={styles.price}>${deal.price}</Text>
         </View>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
-const propTypes = {
+DealItem.propTypes = {
   deal: PropTypes.object.isRequired,
 };
 
